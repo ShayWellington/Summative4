@@ -1,0 +1,215 @@
+* {
+  text-decoration: none;
+  list-style: none;
+}
+
+
+/*  Styles  */
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  /* font-family: 'Roboto', sans-serif; */
+  font-size: 60px;
+  font-weight: 700;
+}
+
+h2 {
+  /* font-family: 'Roboto', sans-serif; */
+  line-height: 1.4;
+  margin-bottom: 25px;
+  margin-top: 30px;
+  padding-right: 7%;
+}
+
+h3 {
+  /* font-family: 'Roboto', sans-serif; */
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.6;
+  padding-top: 10px;
+}
+
+h4 {
+  /* font-family: 'Roboto', sans-serif; */
+  font-weight: 100;
+  font-size: 16px;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  max-width: 700px;
+  /* padding-right: 10%; */
+  /* margin: 0 7.5% 30px 0; */
+}
+
+/* General */
+
+.container {
+  padding: 10px 10% 30px 10%;
+}
+
+/* Buttons */
+
+.btn-secondary {
+  color: white;
+  /* background-color: #FCAB51; */
+  border: 0px;
+  margin: 10px auto 10px auto;
+}
+
+/* Form */
+
+input {
+  border: 0px;
+  border-radius: 5px;
+}
+
+#searchsubmit {
+  color: white;
+  background-color: #FCAB51;
+  border: 0px;
+}
+
+/*  Header */
+
+.primary-nav {
+  background-color: white;
+}
+
+.navbar {
+  padding-left: 10%;
+}
+
+nav ul li {
+   display: inline;
+   padding: 9.5px 9.5px 0 9.5px;
+   bottom: 0px;
+   margin-bottom: none;
+ }
+
+nav ul li a {
+   color: #022568;
+   margin-right: 2rem;
+ }
+
+ .top-bar {
+   margin-top: 1rem;
+ }
+
+ .menu-top-menu-container {
+   width: 100%;
+ }
+
+ .main-nav ul ul {
+    display: none;
+}
+
+.main-nav ul li:hover > ul {
+    display: block;
+}
+
+.main-nav ul ul {
+    display: none;
+    position: absolute;
+    top: 3em;
+    left: 0;
+    z-index: 99999;
+    width: 180px;
+    background: #fff;
+    box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
+}
+
+.main-nav li {
+    position: relative;
+}
+
+.secondary-nav {
+  padding-left: 6em;
+}
+
+ /* Footer */
+
+ .footer {
+    padding: 20px 7.5% 20px 7.5%;
+ }
+
+ .footer p {
+   color: white;
+ }
+
+ .footer-center {
+   text-align: center;
+ }
+
+.menu-footer-menu a {
+  background-color: white;
+}
+
+.footer-byline {
+  text-align: center;
+}
+
+.footer-byline p {
+  font-style: italic;
+}
+
+.socialMediaLinks {
+    font-size: 30px;
+    margin: 0 10px 0 0;
+    color: white;
+    text-decoration: none;
+}
+
+.socialMediaLinks a:hover {
+    color: #673ab7;
+    text-decoration: none;
+}
+
+ /* Home Page */
+
+ .home-banner-img {
+   width: 100%;
+   height: 125%;
+   position: absolute;
+   opacity: 0.5;
+   display: inline-block;
+ }
+
+ .home-landing-div {
+   position: relative;
+   height: 90vh;
+   overflow: hidden;
+   background-color: #022568;
+   margin-bottom: 15px;
+ }
+
+ .home-landing-left {
+   padding: 10% 10% 0 10%;
+ }
+
+ .home-title {
+   color: white;
+ }
+
+ .home-landing-right {
+   padding: 10% 20% 0 0;
+ }
+
+ .home-about-div {
+
+ }
+
+ .home-services-div {
+
+ }
+
+ .home-volunteer-div {
+
+ }
