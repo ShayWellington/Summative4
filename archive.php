@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="container my-4 mx-4">
+<div class="container">
 
 <div class="row">
 
@@ -13,12 +13,12 @@
     <?php next_posts_link();  ?>
   </div>
 
-  <!-- <div class="col-8 col-xs-8 col-sm-8 col-md-8 col-lg-3 mb-4">
+  <div class="col-8 col-xs-8 col-sm-8 col-md-8 col-lg-3 mb-4">
     <?php if ( is_active_sidebar( 'blog-sidebar' ) ) : ?>
         <?php dynamic_sidebar( 'blog-sidebar' ); ?>
       <?php else : ?>
       <?php endif; ?>
-  </div> -->
+  </div>
 
 </div>
 

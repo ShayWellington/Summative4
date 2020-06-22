@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <div class="container">
   <section class="row pt-5">
-    <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-7 ml-lg-4">
+    <div class=" page-div col-12 col-xs-12 col-sm-12 col-md-12 col-lg-8 ml-lg-4">
       <h1 class="mb-5"> <?php the_title(); ?>   </h1>
       <?php if(has_post_thumbnail()): ?>
           <div>
@@ -15,7 +15,7 @@
 
     </div>
 
-    <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-4">
+    <div class="sidebar-col col-12 col-xs-12 col-sm-12 col-md-12 col-lg-3">
 
       <?php if(is_active_sidebar('page-sidebar')) :?>
         <?php dynamic_sidebar('page-sidebar'); ?>

@@ -6,37 +6,40 @@
 
 /*  Styles  */
 
-h1,
 h2,
 h3,
 h4 {
     font-family: 'Roboto', sans-serif;
 }
 
-h1 {
-  /* font-family: 'Roboto', sans-serif; */
+h1, .myHeadings {
+  font-family: 'Roboto', sans-serif;
   font-size: 60px;
   font-weight: 700;
+  /* text-align: center; */
+  padding-left: 5%;
+  color: #0c0244;
 }
 
 h2 {
-  /* font-family: 'Roboto', sans-serif; */
   line-height: 1.4;
+  font-weight: 700;
   margin-bottom: 25px;
   margin-top: 30px;
   padding-right: 7%;
+  color: #b72a98;
 }
 
 h3 {
-  /* font-family: 'Roboto', sans-serif; */
-  font-size: 18px;
-  font-weight: 300;
+  font-size: 22px;
+  font-weight: 500;
   line-height: 1.6;
   padding-top: 10px;
+  padding-bottom: 10px;
+  color: #0c0244;
 }
 
 h4 {
-  /* font-family: 'Roboto', sans-serif; */
   font-weight: 100;
   font-size: 16px;
 }
@@ -45,23 +48,42 @@ p {
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
   max-width: 700px;
-  /* padding-right: 10%; */
-  /* margin: 0 7.5% 30px 0; */
+  padding-right: 10%;
+  color: #0c0244;
+}
+
+.paragraph {
+  margin: 20px 0;
 }
 
 /* General */
 
 .container {
-  padding: 10px 10% 30px 10%;
+  padding: 10px 5% 30px 5%;
+}
+
+.sidebar-col {
+  padding-left: 20px;
+}
+
+.list-section {
+  border-left: 2px solid #A9A9A9;
 }
 
 /* Buttons */
 
 .btn-secondary {
   color: white;
-  /* background-color: #FCAB51; */
   border: 0px;
-  margin: 10px auto 10px auto;
+  width: 33%;
+  margin: 0 33% 0 33%;
+}
+
+/* Blog */
+
+.blog-post-div {
+  margin: 10px 0;
+  padding: 10px 0;
 }
 
 /* Form */
@@ -75,6 +97,23 @@ input {
   color: white;
   background-color: #FCAB51;
   border: 0px;
+}
+
+.wpforms-field-container input {
+  background-color: #DCDCDC;
+  border: 0px;
+  border-radius: 5px;
+}
+
+.wpforms-field-label {
+  font-family: 'Roboto', sans-serif;
+}
+
+#wpforms-submit-82 {
+  border: 0px;
+  border-radius: 5px;
+  color: white;
+  background-color: #FCAB51;
 }
 
 /*  Header */
@@ -128,22 +167,32 @@ nav ul li a {
 
 .main-nav li {
     position: relative;
+    padding-bottom: 20px;
 }
+
 
 .secondary-nav {
   padding-left: 6em;
+}
+
+.input #s {
+  background-color: #E5E5E5;
 }
 
  /* Footer */
 
  .footer {
     padding: 20px 7.5% 20px 7.5%;
+    margin-top: 30px;
  }
 
  .footer p {
    color: white;
  }
 
+.footer-text {
+  color: white !important;
+}
  .footer-center {
    text-align: center;
  }
@@ -156,8 +205,9 @@ nav ul li a {
   text-align: center;
 }
 
-.footer-byline p {
+.footer-byline a {
   font-style: italic;
+  color: white;
 }
 
 .socialMediaLinks {
@@ -168,18 +218,25 @@ nav ul li a {
 }
 
 .socialMediaLinks a:hover {
-    color: #673ab7;
+    color: #b72a98;
     text-decoration: none;
+}
+
+#menu-footer-menu li a {
+  color: white;
 }
 
  /* Home Page */
 
  .home-banner-img {
-   width: 100%;
-   height: 125%;
+   /* width: 100%; */
+   width: 100vw;
+   min-height: 500px;
+   height: 90vh;
+   object-fit: cover;
    position: absolute;
    opacity: 0.5;
-   display: inline-block;
+   /* display: inline-block; */
  }
 
  .home-landing-div {
@@ -190,26 +247,103 @@ nav ul li a {
    margin-bottom: 15px;
  }
 
- .home-landing-left {
-   padding: 10% 10% 0 10%;
+ .home-title {
+   text-align: left;
+   padding-left: 0;
+   width: 80%;
+   margin-left: 10%;
+   padding-top: 90px;
+   color: white !important;
+   max-width: none;
+   font-size: 100px;
  }
 
- .home-title {
-   color: white;
+ .important-text {
+   color: #b72a98;
+   text-align: center;
+   font-size: 20px;
+   line-height: 32px;
+   font-weight: bold;
+   padding: 15px 10px 0 0;
  }
 
  .home-landing-right {
-   padding: 10% 20% 0 0;
+   color: gray;
  }
 
- .home-about-div {
-
+ .home-center {
+   padding: 10px 15% 10px 15%;
  }
 
- .home-services-div {
+/* Woocommerce */
 
- }
+ .button a, .woocommerce a.button {
+    border: 0px;
+    border-radius: 5px;
+    color: #FFFFFF;
+    background-color: #FCAB51;
+    font-weight: lighter;
+}
 
- .home-volunteer-div {
+.billingFields .form-row{
+    width: 100% !important;
+}
 
- }
+.billingFields .form-row .woocommerce-input-wrapper{
+    width: 100% !important;
+}
+
+.billingFields .form-row .woocommerce-input-wrapper input,
+.billingFields .form-row .woocommerce-input-wrapper select{
+    height: calc(1.5em + .75rem + 2px) !important;
+    padding: .375rem .75rem !important;
+    font-size: 1rem !important;
+    font-weight: 400 !important;
+    line-height: 1.5 !important;
+    background-color: #E5E5E5;
+}
+
+.billingFields .form-row .woocommerce-input-wrapper textarea{
+    min-height: 200px !important;
+    max-height: 800px !important;
+    padding: .375rem .75rem !important;
+    font-size: 1rem !important;
+    font-weight: 400 !important;
+    line-height: 1.5 !important;
+}
+
+
+@media  (max-width: 850px) {
+
+.fa-bars {
+  color:grey;
+  font-size:28px;
+}
+
+.home-title {
+  text-align: center;
+  font-size: 70px;
+}
+
+.footer-center {
+  text-align: left;
+}
+
+.page-div {
+  padding-left: 5%;
+}
+
+.navbar {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+}
+
+@media  (max-width: 500px) {
+
+.home-title {
+  font-size: 50px;
+}
+
+}
